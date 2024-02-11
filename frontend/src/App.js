@@ -21,6 +21,7 @@ function App() {
 		try {
 			const url = `${process.env.REACT_APP_BACKEND_API_URL}/login/success`;
 			const { data } = await axios.get(url, { withCredentials: true });
+      setUser(data.user);
 			console.log(data)
 		} catch (err) {
 			console.log(err);
@@ -33,7 +34,7 @@ function App() {
   return (
     <div >
       <BrowserRouter>
-        <Navbar />
+        <Navbar user={user}/>
         <Routes>
           <Route path='/' element={<Shop user={user} />} />
           <Route path='/mens' element={<ShopCategory user={user}  banner={man_banner} category='men' />} />
