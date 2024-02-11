@@ -5,7 +5,7 @@ import Offers from '../Components/Offers/Offers'
 import NewCollections from '../Components/NewCollections/NewCollections'
 import Newsletter from '../Components/Newsletter/Newsletter'
 
-const Shop = () => {
+const Shop = (userDetails) => {
   return (
     <div>
 

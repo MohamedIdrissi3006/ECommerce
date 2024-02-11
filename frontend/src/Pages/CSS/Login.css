@@ -142,3 +142,9 @@
     font-size: 18px;
     font: 500;
 }
+
+.login-error-toast {
+    background-color: #ff3333; /* Red background color */
+    color: #fff; /* White text color */
+  }
+  

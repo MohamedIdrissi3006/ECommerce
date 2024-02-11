@@ -9,7 +9,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
   const { firstName, lastName, email, tel, password, pic } = req.body;
 
-  if (!firstName || !lastName || !tel || !email || !password) {
+  if (!firstName || !lastName || !email || !password) {
     res.status(400);
     throw new Error("Please Enter all the Feilds");
 

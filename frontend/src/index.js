@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ShopContextProvider from './Context/ShopContext';
-import 'dotenv/config';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
